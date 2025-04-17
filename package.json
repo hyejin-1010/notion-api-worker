@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^2.0.0",
-    "@cloudflare/wrangler": "^1.10.3",
+    "wrangler": "^3.32.0",
     "@types/node": "^14.0.24",
     "prettier": "^2.0.5",
     "ts-loader": "^8.0.1",
