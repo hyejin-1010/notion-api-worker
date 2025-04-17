@@ -1,9 +1,13 @@
 name = "notion-cloudflare-worker"
-webpack_config = "webpack.config.js"
-type = "webpack"
+main = "dist/worker.production.js"
+compatibility_date = "2023-09-01"
+
 workers_dev = true
 
+# 아래 값들은 실제 배포 시 채워야 합니다
 account_id = ""
-zone_id = ""
+# zone_id 는 더 이상 필수가 아닙니다
 
-route = "notion-api.splitbee.io/*"
+routes = [
+  { pattern = "notion-api.splitbee.io/*", zone_name = "" }
+]
